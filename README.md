@@ -1,16 +1,17 @@
-# task_notes_manager
+# Task Notes Manager (flutter-task-notes-app)
 
-A new Flutter project.
+OMWESIGYESEEZI
+23/U/16824/PS
 
-## Getting Started
+A simple Flutter app to create and manage tasks & notes locally using SQLite (sqflite). The app supports light/dark theme preference stored via SharedPreferences.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ Features
+- Home screen with dynamic ListView of tasks.
+- Add task screen with form (title, priority, description).
+- Local persistence with `sqflite` for tasks.
+- Theme preference stored with `shared_preferences`.
+- Delete tasks by swipe (Dismissible).
+- Task complete toggle and edit/update support (basic).
+ How to run
+1. Clone the repository:
+   run flutter pub get 
