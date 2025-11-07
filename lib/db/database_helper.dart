@@ -57,4 +57,16 @@ class DatabaseHelper {
     final db = await instance.database;
     return await db.delete('tasks_table', where: 'id = ?', whereArgs: [id]);
   }
+
+  // Update a task (for marking as completed)
+Future<int> updateTask(TaskItem task) async {
+  final db = await instance.database;
+  return await db.update(
+    'tasks_table',        
+    task.toJson(),        
+    where: 'id = ?',      
+    whereArgs: [task.id], 
+  );
+}
+
 }
